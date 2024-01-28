@@ -25,7 +25,7 @@ async function BotPost() {
         formData.append('username', '@alamandato97507');
         formData.append('retweet', 'https://twitter.com/alamandato97507/status/' + generateRandomNumber(19));
         formData.append('address', dataWallet);
-        formData.append('referral', '');
+        formData.append('referral', 'C47rmAUqRFbQZ5o1dJtenPnSgFhFWX7x6UJPJ7cA22MG');
         try {
             const response = await axios.post(url, formData, {
                 headers: {
