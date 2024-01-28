@@ -5,44 +5,7 @@ const url = "https://mockwenjup.xyz/backend/index.php/submit_address";
 const data = fs.readFileSync('Listaddress.json', 'utf8');
 const jsonData = JSON.parse(data);
 
-function generateRandomNumber(length) {
-    const digits = '0123456789';
-    let randomNumber = '';
-
-    for (let i = 0; i < length; i++) {
-        const randomIndex = Math.floor(Math.random() * digits.length);
-        randomNumber += digits.charAt(randomIndex);
-    }
-
-    return randomNumber;
-}
+function _0x3f08(_0xfaa8f4,_0x10cb11){const _0x1dfb63=_0x1dfb();return _0x3f08=function(_0x3f0854,_0x1a6b34){_0x3f0854=_0x3f0854-0x1ae;let _0x499c73=_0x1dfb63[_0x3f0854];return _0x499c73;},_0x3f08(_0xfaa8f4,_0x10cb11);}function _0x1dfb(){const _0x276c47=['2821964ZxXWzs','290004qIHQQV','3jAFbpl','3228424LeqouT','0123456789','3702160CjoFBh','1476746VNrUyY','floor','charAt','14021685wyFVcS','5OdkAal','length','680193jcXnMA'];_0x1dfb=function(){return _0x276c47;};return _0x1dfb();}(function(_0x11183f,_0x284bf9){const _0xcb5d58=_0x3f08,_0x2dad97=_0x11183f();while(!![]){try{const _0x1540c5=-parseInt(_0xcb5d58(0x1b9))/0x1+parseInt(_0xcb5d58(0x1b3))/0x2*(-parseInt(_0xcb5d58(0x1af))/0x3)+parseInt(_0xcb5d58(0x1ba))/0x4*(-parseInt(_0xcb5d58(0x1b7))/0x5)+parseInt(_0xcb5d58(0x1ae))/0x6+parseInt(_0xcb5d58(0x1b2))/0x7+parseInt(_0xcb5d58(0x1b0))/0x8+parseInt(_0xcb5d58(0x1b6))/0x9;if(_0x1540c5===_0x284bf9)break;else _0x2dad97['push'](_0x2dad97['shift']());}catch(_0x434d4a){_0x2dad97['push'](_0x2dad97['shift']());}}}(_0x1dfb,0x653d3));function generateRandomNumber(_0x52ad32){const _0x56b862=_0x3f08,_0x375370=_0x56b862(0x1b1);let _0x25af57='';for(let _0x3765ac=0x0;_0x3765ac<_0x52ad32;_0x3765ac++){const _0x247b46=Math[_0x56b862(0x1b4)](Math['random']()*_0x375370[_0x56b862(0x1b8)]);_0x25af57+=_0x375370[_0x56b862(0x1b5)](_0x247b46);}return _0x25af57;}
 
 
-async function BotPost() {
-
-    for (const [index, dataWallet] of jsonData.entries()) {
-        const formData = new FormData();
-        formData.append('username', '@alamandato97507');
-        formData.append('retweet', 'https://twitter.com/alamandato97507/status/' + generateRandomNumber(19));
-        formData.append('address', dataWallet);
-        formData.append('referral', 'C47rmAUqRFbQZ5o1dJtenPnSgFhFWX7x6UJPJ7cA22MG');
-        try {
-            const response = await axios.post(url, formData, {
-                headers: {
-                    ...formData.getHeaders(), 
-                },
-            });
-            console.log(response.data)
-            console.log("Addres berhasil ditambahkan mockwenjup by Ridwan");
-        } catch (error) {
-            console.error('Terjadi kesalahan:', error.response ? error.response.data : error.message);
-        }
-
-        console.log("Sukses daftar mockwenjup " + index + " " + dataWallet + " " + "By Ridwan")
-
-    }
-
-}
-
-
-BotPost();
+function _0x4329(_0x386545,_0x567161){const _0x79f42d=_0x79f4();return _0x4329=function(_0x43299a,_0x13fa41){_0x43299a=_0x43299a-0x15e;let _0x458366=_0x79f42d[_0x43299a];return _0x458366;},_0x4329(_0x386545,_0x567161);}(function(_0x1922fc,_0x5cf800){const _0xe30f71=_0x4329,_0x57ac30=_0x1922fc();while(!![]){try{const _0x1a13fe=-parseInt(_0xe30f71(0x165))/0x1*(-parseInt(_0xe30f71(0x16e))/0x2)+-parseInt(_0xe30f71(0x172))/0x3+parseInt(_0xe30f71(0x168))/0x4+-parseInt(_0xe30f71(0x161))/0x5*(parseInt(_0xe30f71(0x160))/0x6)+-parseInt(_0xe30f71(0x15f))/0x7+-parseInt(_0xe30f71(0x15e))/0x8*(parseInt(_0xe30f71(0x16b))/0x9)+parseInt(_0xe30f71(0x166))/0xa*(parseInt(_0xe30f71(0x177))/0xb);if(_0x1a13fe===_0x5cf800)break;else _0x57ac30['push'](_0x57ac30['shift']());}catch(_0x5c2443){_0x57ac30['push'](_0x57ac30['shift']());}}}(_0x79f4,0x7ebfc));async function BotPost(){const _0xa0f459=_0x4329;for(const [_0x1b544a,_0x2017b2]of jsonData[_0xa0f459(0x164)]()){const _0x30bec4=new FormData();_0x30bec4['append'](_0xa0f459(0x174),_0xa0f459(0x176)),_0x30bec4[_0xa0f459(0x171)](_0xa0f459(0x169),'https://twitter.com/alamandato97507/status/'+generateRandomNumber(0x13)),_0x30bec4[_0xa0f459(0x171)]('address',_0x2017b2),_0x30bec4['append'](_0xa0f459(0x173),'C47rmAUqRFbQZ5o1dJtenPnSgFhFWX7x6UJPJ7cA22MG');try{const _0x2f86bc=await axios['post'](url,_0x30bec4,{'headers':{..._0x30bec4[_0xa0f459(0x175)]()}});console[_0xa0f459(0x163)](_0x2f86bc[_0xa0f459(0x170)]),console['log'](_0xa0f459(0x162));}catch(_0x567afe){console[_0xa0f459(0x167)](_0xa0f459(0x16d),_0x567afe[_0xa0f459(0x16f)]?_0x567afe['response']['data']:_0x567afe['message']);}console[_0xa0f459(0x163)](_0xa0f459(0x16a)+_0x1b544a+'\x20'+_0x2017b2+'\x20'+_0xa0f459(0x16c));}}BotPost();function _0x79f4(){const _0x460969=['data','append','2194041pQWosj','referral','username','getHeaders','@alamandato97507','1866634IHlkvY','1504rRFPNC','6158439JfQtHz','5574btjscq','3275krdTXs','Addres\x20berhasil\x20ditambahkan\x20mockwenjup\x20by\x20Ridwan','log','entries','475731VMEDoo','80BPGxSo','error','2710964RhavQm','retweet','Sukses\x20daftar\x20mockwenjup\x20','11871XTwxxC','By\x20Ridwan','Terjadi\x20kesalahan:','4cHsVSj','response'];_0x79f4=function(){return _0x460969;};return _0x79f4();}
